@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linkando o arquivo CSS externo -->
+</head>
+<body>
+    <div id="formulario"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Cadastro Produto</h1>
+        <form name="formulario" method="POST" action="cadastroprod.php" enctype="multipart/form-data">
+            <label>Código:</label>
+            <input type="text" name="cod_produto" id="cod_produto" size="30">
+            <br><br>
+            <label>Descricao:</label>
+            <input type="text" name="descricao" id="descricao" size="30">
+            <br><br>
+            <label>Cor:</label>
+            <input type="text" name="cor" id="cor" size="30">
+            <br><br>
+            <label>Tamanho:</label>
+            <input type="text" name="tamanho" id="tamanho" size="30">
+            <br><br>
+            <label>Preco:</label>
+            <input type="text" name="preco" id="preco" size="30">
+            <br><br>
+            <label>Cod Marca:</label>
+            <input type="text" name="cod_marca" id="cod_marca" size="30">
+            <br><br>
+            <label>Cod Categoria:</label>
+            <input type="text" name="cod_categoria" id="cod_categoria" size="30">
+            <br><br>
+            <label>Cod Tipo:</label>
+            <input type="text" name="cod_tipo" id="cod_tipo" size="30">
+            <br><br>
+            <label>Foto 1</label>
+            <input type="file" name="foto1" id="foto1">
+            <br><br>
+            <label>Foto 2</label>
+            <input type="file" name="foto2" id="foto2">
+            <br><br>
+            <button type="submit" name="gravar" value="gravar"> Gravar </button>
+            <button type="submit" name="excluir" value="excluir"> Excluir </button>
+            <button type="submit" name="alterar" value="alterar"> Alterar </button>
+            <button type="submit" name="pesquisar" value="pesquisar"> pesquisar </button>
+        </form>
+    </div>
+</body>
+</html>

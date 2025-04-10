@@ -1,0 +1,27 @@
+/* Definindo um estilo básico para a página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Estilizando os botões */
+.btn {
+    background-color: #007bff; 
+    color: white;               
+    border: none;              
+    padding: 12px 24px;     
+    font-size: 16px;         
+    border-radius: 25px;      
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+    background-color: #0056b3;  
+}
