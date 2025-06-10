@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Cadastro de Autores</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Formulario de cadastros de autores </h2>
+            <form name="formulario" method="POST" action="autor.php">
+                <div>
+                    <label for="codigo">Codigo do Autor:</label>
+                    <input type="text" name="codigo" id="codigo" size="50">
+                    <br><br>
+                    <label for="nome">Nome do autor:</label>
+                    <input type="text" name="nome" id="nome" size="50">
+                    <br><br>
+                    <label for="nome">Nome dos Pais:</label>
+                    <input type="text" name="pais" id="pais" size="50">
+                </div>
+                <br><br>
+                <div class="form-buttons">
+                    <input type="submit" name="Excluir" value="Excluir">
+                    <input type="submit" name="Alterar" value="Alterar">
+                    <input type="submit" name="Pesquisar" value="Pesquisar">
+                    <input type="submit" name="Gravar" value="Gravar">
+                </div>
+        </div>
+    </body>
+</html>

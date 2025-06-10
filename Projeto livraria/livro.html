@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Livro</title>
+    <link rel="stylesheet" href="css.css"> <!-- Linkando o arquivo CSS externo -->
+</head>
+<body>
+    <div id="formulario"> <br>
+        <h1>Cadastro Livro</h1>
+        <form name="formulario" method="POST" action="livro.php" enctype="multipart/form-data">
+            <label>Código:</label>
+            <input type="text" name="codigo" id="codigo" size="30">
+            <br><br>
+            <label>Titulo:</label>
+            <input type="text" name="titulo" id="titulo" size="30">
+            <br><br>
+            <label>Número de Páginas:</label>
+            <input type="text" name="nrpaginas" id="nrpaginas" size="30">
+            <br><br>
+            <label>Ano:</label>
+            <input type="text" name="ano" id="ano" size="30">
+            <br><br>
+            <label>Código do Autor:</label>
+            <input type="text" name="codautor" id="cod_autor" size="30">
+            <br><br>
+            <label>Código da Categoria:</label>
+            <input type="text" name="codcategoria" id="codcategoria" size="30">
+            <br><br>
+            <label>Código da Editora:</label>
+            <input type="text" name="codeditora" id="cod_editora" size="30">
+            <br><br>
+            <label>Resenha:</label>
+            <textarea name="resenha" id="resenha" rows="4" cols="30"></textarea>
+            <br><br>
+            <label>Preço:</label>
+            <input type="text" name="preco" id="preco" size="30">
+            <br><br>
+            <label>Foto Capa 1:</label>
+            <input type="file" name="fotocapa1" id="fotocapa1">
+            <br><br>
+            <label>Foto Capa 2:</label>
+            <input type="file" name="fotocapa2" id="fotocapa2">
+            <br><br>
+            <button type="submit" name="gravar" value="gravar"> Gravar </button>
+            <button type="submit" name="excluir" value="excluir"> Excluir </button>
+            <button type="submit" name="alterar" value="alterar"> Alterar </button>
+            <button type="submit" name="pesquisar" value="pesquisar"> Pesquisar </button>
+        </form>
+        <br><br><br>    
+    </div>
+</body>
+</html>
