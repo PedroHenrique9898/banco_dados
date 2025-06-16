@@ -6,10 +6,6 @@ $conectar = mysql_connect('localhost', 'root', '');
 if (!$conectar) {
     die('Erro ao conectar ao banco de dados: ' . mysql_error());
 }
-$banco = mysql_select_db("livraria", $conectar);
-if (!$banco) {
-    die('Erro ao selecionar o banco de dados: ' . mysql_error());
-}
 
 $status = "";
 
@@ -72,7 +68,7 @@ if (empty($_SESSION["shopping_cart"])) {
                 $total_price += $product["preco"] * $product["quantity"];
             ?>
             <tr>
-                <td><img src="fotos/<?php echo $product["foto"]; ?>" width="50" height="50" /></td>
+                <td><img src="Fotos/<?php echo $product["fotocapa1"]; ?>" width="100" height="100" /></td>
                 <td><?php echo $product["resenha"]; ?></td>
                 <td>R$ <?php echo $product["preco"]; ?></td>
                 <td>

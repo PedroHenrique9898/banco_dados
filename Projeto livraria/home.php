@@ -62,7 +62,7 @@ if (!empty($_SESSION["shopping_cart"])) {
 <body>
 <header>
     <img src="logo.avif" alt="Logo" class="logo" style="height: 60px; vertical-align: middle;">
-    <a href="http://127.0.0.1:8080/project_livraria/menu.html" class="login-btn">Login</a>
+    <a href="http://127.0.0.1:8080/project_livraria/login.html" class="login-btn">Login</a>
     <?php if ($cart_count > 0): ?>
         <div class="cart_div">
             <a href="cart.php">
